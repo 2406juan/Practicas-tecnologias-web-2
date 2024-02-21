@@ -14,11 +14,9 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Verificar si se ha enviado un número
         if (isset($_POST['numero']) && !empty($_POST['numero'])) {
             $numero = $_POST['numero'];
             
-            // Determinar si es par o impar
             if ($numero % 2 == 0) {
                 echo "<p>El número $numero es par.</p>";
             } else {
